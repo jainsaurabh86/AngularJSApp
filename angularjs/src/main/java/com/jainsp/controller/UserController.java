@@ -28,4 +28,9 @@ public class UserController {
     public void saveUser(@RequestBody UserDto userDto) {
         userService.saveUser(userDto);
     }
+
+    @RequestMapping("/id")
+    public String sampleController(){
+        return "hello angular";
+    }
 }
