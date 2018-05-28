@@ -17,3 +17,7 @@ https://github.com/angular/angular-cli#installation
 2. ng new ag-grid-app --style scss
 3. cd ag-grid-app
 4. ng serve
+- Stop the app and browse to : localhost:4200
+
+Now add ag-grid npm package
+1. npm install --save ag-grid ag-grid-angular
