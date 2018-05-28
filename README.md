@@ -21,3 +21,6 @@ https://github.com/angular/angular-cli#installation
 
 Now add ag-grid npm package
 1. npm install --save ag-grid ag-grid-angular
+
+For enabling grouping in aag-grid:
+1. npm install --save ag-grid-enterprise

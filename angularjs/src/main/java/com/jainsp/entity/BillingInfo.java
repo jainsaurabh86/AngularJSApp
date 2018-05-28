@@ -7,8 +7,6 @@ import lombok.Setter;
 import java.math.BigDecimal;
 
 @Data
-//@Getter
-//@Setter
 public class BillingInfo {
     private Integer invoiceGroupNumber;
     private Integer accountNumber;

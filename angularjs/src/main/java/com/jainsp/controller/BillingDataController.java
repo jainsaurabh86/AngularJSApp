@@ -2,6 +2,8 @@ package com.jainsp.controller;
 
 import com.jainsp.entity.BillingInfo;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.math.BigDecimal;
@@ -12,7 +14,7 @@ import java.util.List;
 @RestController
 public class BillingDataController {
 
-    @RequestMapping("/getAll")
+    @RequestMapping(name = "/getAll", method = RequestMethod.GET)
     public List<BillingInfo> getAllBillingData() {
         System.out.println("Sending all billing info now");
         List<BillingInfo> dataList = new ArrayList<>();
@@ -62,5 +64,10 @@ public class BillingDataController {
         dataList.add(info4);
 
         return dataList;
+    }
+
+    @RequestMapping(value = "/releaseBillingInvoice")
+    public void releaseBillingInvoice(String billingInfo){
+        System.out.println("Received billing info to release as : " + billingInfo);
     }
 }
