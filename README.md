@@ -13,4 +13,7 @@ node --version
 ### Create a new project using angular cli:
 https://github.com/angular/angular-cli#installation
 
-npm install -g @angular/cli
+1. npm install -g @angular/cli
+2. ng new ag-grid-app --style scss
+3. cd ag-grid-app
+4. ng serve
